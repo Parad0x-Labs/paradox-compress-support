@@ -78,6 +78,19 @@ a{color:inherit}
   background:rgba(255,255,255,.03);
 }
 
+/* Active nav item (current page) */
+.nav a[aria-current="page"]{
+  color:var(--text);
+  border-color:var(--line);
+  background:rgba(255,255,255,.05);
+}
+
+/* Optional: nicer keyboard focus */
+.nav a:focus-visible{
+  outline:2px solid rgba(124,92,255,.6);
+  outline-offset:2px;
+}
+
 .hero{
   border:1px solid var(--line);
   background:rgba(18,26,43,.68);
