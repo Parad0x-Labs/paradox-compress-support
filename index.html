@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Parad0x Compress — Support</title>
-  <meta name="description" content="Support page for Parad0x Compress. Contact, FAQ, and links to privacy policy and terms." />
+  <meta name="description" content="Support page for Parad0x Compress. Contact, FAQ, and links to privacy policy, terms, and about." />
   <link rel="stylesheet" href="assets/style.css" />
 </head>
 
@@ -13,12 +13,14 @@
     <div class="topbar">
       <a class="brand" href="./index.html">
         <div class="logo" aria-hidden="true"></div>
-        <h1>Parad0x Compress — Support</h1>
+        <h1>Parad0x Compress</h1>
       </a>
 
       <nav class="nav">
-        <a href="./privacy.html">Privacy</a>
+        <a href="./index.html" aria-current="page">Support</a>
+        <a href="./about.html">About</a>
         <a href="./terms.html">Terms</a>
+        <a href="./privacy.html">Privacy</a>
         <a href="mailto:Help@parad0xlabs.com">Email Support</a>
       </nav>
     </div>
@@ -68,14 +70,14 @@
       <section class="card">
         <h3>Subscriptions & Purchases</h3>
         <p>
-          If you subscribed through Apple, you can manage or cancel anytime:
-          <br/><b>iOS Settings → Apple ID → Subscriptions</b>
+          If you subscribed through Google Play, you can manage or cancel anytime:
+          <br/><b>Google Play → Profile → Payments & subscriptions → Subscriptions</b>
         </p>
         <p>
-          For billing issues, refunds, or receipt problems, Apple Support is the fastest path.
+          For billing issues, refunds, or receipt problems, Google Play Support is the fastest path.
         </p>
         <p class="small">
-          We don’t collect your payment details — Apple handles transactions.
+          We don’t collect your payment details — Google Play handles transactions.
         </p>
       </section>
 
@@ -94,18 +96,23 @@
           Email: <a href="mailto:Help@parad0xlabs.com">Help@parad0xlabs.com</a>
         </p>
         <p class="small">
-          Include: device model, iOS version, file type (HEIC/AVIF/MP4/etc.), and what happened.
+          Include: device model, Android version, app version, file type (HEIC/AVIF/MP4/etc.), and what happened.
         </p>
       </section>
     </div>
 
     <div class="footer">
-      <div>© 2026 Parad0x Labs</div>
+      <div>© <span id="y"></span> Parad0x Labs</div>
       <div>
+        <a href="./about.html">About</a> ·
         <a href="./privacy.html">Privacy Policy</a> ·
         <a href="./terms.html">Terms</a>
       </div>
     </div>
   </div>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
